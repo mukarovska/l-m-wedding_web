@@ -1,0 +1,108 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.hero {
+  @include m.section;
+  position: relative;
+
+  &__info {
+    @include m.text;
+    text-align: right;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    max-width: 500px;
+    margin: 10px auto;
+
+    .textBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  }
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background-color: v.$primary-color;
+}
+
+.hero__namesWrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 500px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.flowers--hero {
+  &--top {
+    width: 700px;
+    height: 777px;
+    background-image: url('./images/flowers-hero-top2.png');
+    top: -310px;
+    left: 60%;
+
+    @media screen and (min-width: 1510px) {
+      width: 800px;
+      height: 877px;
+      top: -310px;
+      left: 70%;
+    }
+  }
+
+  &--bottom {
+    width: 300px;
+    height: 356px;
+    background-image: url('./images/flowers-hero-bottom.png');
+    top: 100px;
+    right: 60%;
+
+    @media screen and (min-width: 350px) {
+      width: 300px;
+      height: 356px;
+      top: 140px;
+      right: 58%;
+    }
+
+    @media screen and (min-width: 450px) {
+      width: 500px;
+      height: 556px;
+      top: 20px;
+      right: 60%;
+    }
+
+    @media screen and (min-width: 530px) {
+      width: 500px;
+      height: 556px;
+      top: 80px;
+      right: 60%;
+    }
+
+    @media screen and (min-width: 650px) {
+      width: 500px;
+      height: 556px;
+      top: 150px;
+      right: 70%;
+    }
+
+    @media screen and (min-width: 1050px) {
+      width: 600px;
+      height: 656px;
+      top: 100px;
+      right: 70%;
+    }
+
+    @media screen and (min-width: 1300px) {
+      width: 700px;
+      height: 756px;
+      top: 50px;
+      right: 77%;
+    }
+  }
+}

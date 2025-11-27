@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #b39b7d47;
+  .app {
+    max-width: 2280px;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+
+    .flowers {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

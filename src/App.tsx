@@ -1,12 +1,15 @@
-import './App.css'
+import { CountDown } from './components/countDown/CountDown';
+import { HeroSection } from './components/heroSection/HeroSection';
+import { InProgress } from './components/inProgress/InProgress';
 
 function App() {
-
   return (
-    <>
-      <h1>Web je v procesu tvoření...</h1>
-    </>
-  )
+    <div className="app">
+      <HeroSection />
+      <CountDown />
+      <InProgress />
+    </div>
+  );
 }
 
-export default App
+export default App;
