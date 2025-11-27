@@ -1,8 +1,8 @@
 @use '../../styles/variables' as v;
 @use '../../styles/mixins' as m;
 
-.countDown {
-  @include m.section(10px 30px);
+.countdown {
+  @include m.section(0 30px);
 
   &__wrap {
     position: relative;
@@ -14,18 +14,5 @@
     justify-content: space-around;
     background-color: #250a0827;
     backdrop-filter: blur(3px);
-  }
-
-  &__fragment {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__value {
-    @include m.text-big;
-    &--num {
-      font-weight: 600;
-    }
   }
 }
