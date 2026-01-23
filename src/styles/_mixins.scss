@@ -1,17 +1,25 @@
 @use 'variables' as v;
 
-@mixin text($weight: 400) {
+@mixin text($weight: 400, $color: v.$primary-color) {
   font-weight: $weight;
   font-size: 16px;
+  font-family: v.$secondary-font;
+  color: $color;
+}
+
+@mixin text-big($weight: 400) {
+  font-weight: $weight;
+  font-size: 20px;
   font-family: v.$secondary-font;
   color: v.$primary-color;
 }
 
-@mixin text-big($weight: 400) {
-  font-weight: 400;
-  font-size: 20px;
-  font-family: v.$secondary-font;
+@mixin h2 {
+  font-weight: 200;
+  font-size: 30px;
+  font-family: v.$primary-font;
   color: v.$primary-color;
+  text-align: center;
 }
 
 @mixin section($padding: 50px 30px) {

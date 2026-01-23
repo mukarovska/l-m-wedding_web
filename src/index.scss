@@ -1,3 +1,6 @@
+@use './styles/variables' as v;
+@use './styles/mixins' as m;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,7 @@
 
 #root {
   background-color: #b39b7d47;
+
   .app {
     max-width: 2280px;
     overflow: hidden;
@@ -17,6 +21,17 @@
       position: absolute;
       background-size: contain;
       background-repeat: no-repeat;
+    }
+
+    .icone {
+      width: 125px;
+      height: auto;
+      color: v.$primary-color;
+    }
+
+    h2 {
+      @include m.h2;
+      margin-bottom: 30px;
     }
   }
 }

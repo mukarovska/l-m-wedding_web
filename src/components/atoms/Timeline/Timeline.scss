@@ -1,0 +1,122 @@
+@use '../../../styles/variables' as v;
+@use '../../../styles/mixins' as m;
+
+.timeline {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 15px 0;
+}
+
+/* The actual timeline (the vertical line) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: v.$primary-color;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline__item {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline__item::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 1px;
+  border-radius: 50%;
+  background-color: v.$primary-color;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+/* Left side */
+.timeline__item--left {
+  left: 0;
+  text-align: right;
+  padding: 10px 20px 10px 0;
+
+  /* Circle */
+  &::after {
+    right: -7px;
+    left: auto;
+  }
+
+  .timeline__content {
+    border-radius: 8px 2px 8px 8px;
+  }
+}
+
+/* Right side */
+.timeline__item--right {
+  left: 50%;
+  text-align: left;
+  padding: 10px 0 10px 20px;
+
+  /* Circle */
+  &::after {
+    left: -11px;
+    right: auto;
+  }
+
+  .timeline__content {
+    border-radius: 2px 8px 8px 8px;
+  }
+}
+
+/* Content inside each item */
+.timeline__content {
+  padding: 20px 30px;
+  background-color: #250a0827;
+  backdrop-filter: blur(3px);
+  position: relative;
+}
+
+/* Media queries - responsive timeline on screens < 600px */
+@media screen and (max-width: 600px) {
+  /* Move the timeline line to the left */
+  .timeline::after {
+    left: 31px;
+    margin-left: 0;
+  }
+
+  /* Full-width containers */
+  .timeline__item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make all arrows point left */
+  .timeline__item--left::before,
+  .timeline__item--right::before {
+    left: 60px;
+    right: auto;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make all circles at the same spot */
+  .timeline__item--left::after,
+  .timeline__item--right::after {
+    left: 15px;
+    right: auto;
+  }
+
+  /* Make right items behave like left ones */
+  .timeline__item--right {
+    left: 0;
+    text-align: left;
+  }
+}

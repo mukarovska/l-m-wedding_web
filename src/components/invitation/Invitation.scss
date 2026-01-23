@@ -1,0 +1,51 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.invitation {
+  @include m.section;
+  min-height: 400px;
+  position: relative;
+
+  &__wrap {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--bottom {
+      align-items: flex-end;
+    }
+  }
+
+  &__text {
+    @include m.text-big;
+    max-width: 70%;
+  }
+}
+
+.flowers--invitation {
+  width: 600px;
+  height: 436px;
+  background-image: url('./images/flowers-invitation.png');
+  top: -230px;
+  left: 67%;
+
+  @media screen and (min-width: 521px) {
+    top: -260px;
+    left: 70%;
+  }
+
+  @media screen and (min-width: 1120px) {
+    width: 600px;
+    height: 836px;
+    top: -270px;
+    left: 80%;
+  }
+}
