@@ -17,7 +17,7 @@ const events: Event[] = [
 export const Program = () => {
   return (
     <div className="program section">
-      <h2 className="program__heading">Program</h2>
+      <h2 className="program__heading h2">Program</h2>
       <Timeline events={events} />
     </div>
   );

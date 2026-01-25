@@ -9,7 +9,9 @@ export const WhereSection = () => {
   return (
     <div className="whereSection section">
       <div className="whereSection__wrap section__wrap">
-        <h2 className="whereSection__heading">Kdy a Kde?</h2>
+        <div className="flowers flowers--whereSection flowers--whereSection--top"></div>
+        <div className="flowers flowers--whereSection flowers--whereSection--bottom"></div>
+        <h2 className="whereSection__heading h2">Kdy a Kde?</h2>
         <div className="whereSection__cards">
           <Card
             title="Příjezd hostů"

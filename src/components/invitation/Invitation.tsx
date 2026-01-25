@@ -18,7 +18,8 @@ export const Invitation = () => {
           <p className="invitation__text">Prosíme vás o písemné potvrzení vaší účasti.</p>
         </div>
       </div>
-      <div className="flowers flowers--invitation"></div>
+      <div className="flowers flowers--invitation flowers--invitation--top"></div>
+      <div className="flowers flowers--invitation flowers--invitation--bottom"></div>
     </div>
   );
 };

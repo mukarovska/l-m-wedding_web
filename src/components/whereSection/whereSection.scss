@@ -2,7 +2,7 @@
 @use '../../styles/mixins' as m;
 
 .whereSection {
-  @include m.section(0 50px 50px);
+  @include m.section(0 30px 50px);
   position: relative;
 
   &__wrap {
@@ -22,5 +22,59 @@
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+.flowers--whereSection {
+  &--top {
+    width: 800px;
+    height: 877px;
+    transform: scaleX(-1) rotate(-133deg);
+    background-image: url('/flowers/1.png');
+    top: 230px;
+    left: 48%;
+
+    @media screen and (min-width: 500px) {
+      left: 60%;
+    }
+
+    @media screen and (min-width: 740px) {
+      left: 70%;
+    }
+
+    @media screen and (min-width: 1406px) {
+      left: 80%;
+    }
+  }
+
+  &--bottom {
+    width: 300px;
+    height: 687px;
+    background-image: url('/flowers/4.png');
+    bottom: -400px;
+    right: 70%;
+
+    @media screen and (min-width: 548px) {
+      width: 500px;
+      height: 887px;
+      right: 70%;
+    }
+
+    @media screen and (min-width: 548px) {
+      width: 300px;
+      height: 687px;
+      right: 87%;
+      bottom: -450px;
+    }
+
+    @media screen and (min-width: 1230px) {
+      width: 300px;
+      height: 687px;
+      right: 90%;
+    }
+
+    @media screen and (min-width: 1406px) {
+      display: none;
+    }
   }
 }

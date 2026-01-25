@@ -1,0 +1,59 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.people {
+  @include m.section(0 30px 50px);
+  position: relative;
+
+  &__wrap {
+    @media screen and (min-width: 742px) {
+      max-width: 80%;
+    }
+  }
+
+  &__conteiner {
+    display: flex;
+    gap: 30px;
+    max-width: 760px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1406px) {
+      max-width: 1250px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.flowers--people {
+  &--top {
+    width: 330px;
+    height: 933px;
+    background-image: url('/flowers/5.png');
+    top: 0;
+    right: 110%;
+    transform: rotate(20deg);
+
+    @media screen and (min-width: 400px) {
+      right: 100%;
+    }
+
+    @media screen and (min-width: 1000px) {
+      background-image: url('/flowers/8.png');
+      right: 78%;
+      transform: rotate(17deg);
+      width: 872px;
+      height: 1351px;
+    }
+
+    @media screen and (min-width: 1406px) {
+      display: none;
+    }
+  }
+}

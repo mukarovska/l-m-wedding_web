@@ -1,0 +1,97 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.moreInfo {
+  @include m.section(0 30px 50px);
+  position: relative;
+
+  &__heading {
+    margin-bottom: 15px !important;
+  }
+
+  &__wrap {
+    @media screen and (min-width: 742px) {
+      max-width: 80%;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.accordion {
+  background-color: #250a0827;
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+  padding: 15px 25px;
+
+  &__button {
+    @include m.text-big(600);
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+    gap: 5px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__panel-wrapper {
+    overflow-y: auto;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    scrollbar-color: v.$primary-color transparent;
+    scrollbar-width: thin;
+    padding-right: 12px;
+
+    &.open {
+      max-height: 300px; // nastav podle délky obsahu
+    }
+  }
+
+  &__panel {
+    @include m.text;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  a {
+    color: v.$primary-color;
+  }
+}
+
+.flowers--moreInfo {
+  &--top {
+    width: 400px;
+    height: 787px;
+    background-image: url('/flowers/4.png');
+    transform: scaleY(-1) rotate(199deg);
+    top: 0;
+    left: 80%;
+
+    @media screen and (min-width: 1253px) {
+      left: 89%;
+    }
+  }
+}

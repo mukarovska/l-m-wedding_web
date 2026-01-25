@@ -14,8 +14,8 @@ export const Timeline = ({ events }: Events) => {
             className={`timeline__item ${index % 2 === 0 ? 'timeline__item--left' : 'timeline__item--right'}`}
           >
             <div className="timeline__content">
-              <p>{event.time}</p>
-              <p>{event.title}</p>
+              <p className="timeline__time">{event.time}</p>
+              <p className="timeline__title">{event.title}</p>
             </div>
           </li>
         );

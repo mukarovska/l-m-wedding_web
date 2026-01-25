@@ -8,7 +8,7 @@
 }
 
 #root {
-  background-color: #b39b7d47;
+  background-color: #fff;
 
   .app {
     max-width: 2280px;
@@ -29,7 +29,7 @@
       color: v.$primary-color;
     }
 
-    h2 {
+    h2.h2 {
       @include m.h2;
       margin-bottom: 30px;
     }

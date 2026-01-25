@@ -31,21 +31,63 @@
 }
 
 .flowers--invitation {
-  width: 600px;
-  height: 436px;
-  background-image: url('./images/flowers-invitation.png');
-  top: -230px;
-  left: 67%;
+  &--top {
+    width: 600px;
+    height: 436px;
+    background-image: url('/flowers/3.png');
+    top: -230px;
+    left: 67%;
 
-  @media screen and (min-width: 521px) {
-    top: -260px;
-    left: 70%;
+    @media screen and (min-width: 521px) {
+      top: -260px;
+      left: 70%;
+    }
+
+    @media screen and (min-width: 1120px) {
+      width: 600px;
+      height: 836px;
+      top: -270px;
+      left: 80%;
+    }
   }
 
-  @media screen and (min-width: 1120px) {
-    width: 600px;
-    height: 836px;
-    top: -270px;
-    left: 80%;
+  &--bottom {
+    width: 500px;
+    height: 336px;
+    transform: scaleX(-1) rotate(220deg);
+    background-image: url('/flowers/2.png');
+    bottom: 10px;
+    left: -188px;
+
+    @media screen and (min-width: 400px) {
+      transform: scaleX(-1) rotate(215deg);
+      width: 550px;
+      height: 386px;
+      bottom: -35px;
+      left: -225px;
+    }
+
+    @media screen and (min-width: 460px) {
+      width: 550px;
+      height: 386px;
+      bottom: -90px;
+      left: -225px;
+    }
+
+    @media screen and (min-width: 560px) {
+      transform: scaleX(-1) rotate(220deg);
+      width: 600px;
+      height: 836px;
+      bottom: -420px;
+      left: -405px;
+    }
+
+    @media screen and (min-width: 1000px) {
+      transform: scaleX(-1) rotate(260deg);
+      width: 600px;
+      height: 836px;
+      bottom: -350px;
+      left: -405px;
+    }
   }
 }

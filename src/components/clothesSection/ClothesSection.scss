@@ -1,0 +1,135 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.clothesSection {
+  @include m.section(0 30px 50px);
+  position: relative;
+
+  &__wrap {
+    z-index: 2;
+  }
+
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &--bottom {
+      align-items: flex-end;
+    }
+  }
+
+  &__text {
+    @include m.text-big;
+    max-width: 70%;
+  }
+
+  .collors {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__swatch {
+      width: calc(50% - 15px);
+      aspect-ratio: 1/1;
+      border-radius: 8px;
+
+      &--green {
+        background-color: #a3b08c;
+      }
+
+      &--greenDark {
+        background-color: #7f8970;
+      }
+
+      &--brown {
+        background-color: #6e5645;
+      }
+
+      &--beige {
+        background-color: #e5d9c3;
+      }
+
+      @media screen and (min-width: 501px) {
+        width: calc((100% / 4) - 30px);
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.flowers--clothesSection {
+  &--top {
+    width: 180px;
+    height: 657px;
+    transform: rotate(-40deg);
+    background-image: url('/flowers/6.png');
+    top: 80px;
+    left: 115%;
+
+    @media screen and (min-width: 490px) {
+      left: 105%;
+      top: 60px;
+    }
+
+    @media screen and (min-width: 742px) {
+      display: none;
+    }
+  }
+
+  &--bottom {
+    width: 150px;
+    height: 973px;
+    background-image: url('/flowers/7.png');
+    bottom: -330px;
+    right: 130%;
+    transform: rotate(37deg);
+
+    @media screen and (min-width: 370px) {
+      bottom: -310px;
+      right: 126%;
+    }
+
+    @media screen and (min-width: 400px) {
+      bottom: -280px;
+      right: 125%;
+    }
+
+    @media screen and (min-width: 440px) {
+      transform: rotate(45deg);
+      bottom: -202px;
+      right: 130%;
+    }
+
+    @media screen and (min-width: 500px) {
+      transform: rotate(45deg);
+      bottom: -530px;
+      right: 130%;
+    }
+
+    @media screen and (min-width: 580px) {
+      right: 120%;
+    }
+
+    @media screen and (min-width: 700px) {
+      transform: rotate(50deg);
+      bottom: -500px;
+      right: 110%;
+    }
+
+    @media screen and (min-width: 1406px) {
+      background-image: url('/flowers/8.png');
+      transform: rotate(35deg);
+      width: 872px;
+      height: 1351px;
+      top: 0;
+      right: 75%;
+    }
+  }
+}

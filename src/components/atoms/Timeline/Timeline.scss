@@ -83,18 +83,26 @@
   position: relative;
 }
 
+.timeline__time {
+  @include m.text-big(600);
+}
+
+.timeline__title {
+  @include m.text-big;
+}
+
 /* Media queries - responsive timeline on screens < 600px */
 @media screen and (max-width: 600px) {
   /* Move the timeline line to the left */
   .timeline::after {
-    left: 31px;
+    left: 10px;
     margin-left: 0;
   }
 
   /* Full-width containers */
   .timeline__item {
     width: 100%;
-    padding-left: 70px;
+    padding-left: 30px;
     padding-right: 25px;
   }
 
@@ -110,13 +118,21 @@
   /* Make all circles at the same spot */
   .timeline__item--left::after,
   .timeline__item--right::after {
-    left: 15px;
+    left: 2px;
     right: auto;
   }
 
   /* Make right items behave like left ones */
   .timeline__item--right {
     left: 0;
+    padding-right: 0;
+  }
+
+  .timeline__item--left {
     text-align: left;
+    padding-right: 0;
+    .timeline__content {
+      border-radius: 2px 8px 8px 8px;
+    }
   }
 }

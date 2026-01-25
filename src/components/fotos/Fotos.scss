@@ -1,17 +1,16 @@
 @use '../../styles/variables' as v;
 @use '../../styles/mixins' as m;
 
-.program {
-  @include m.section(0 30px 50px);
+.fotos {
+  @include m.section(0 30px);
   position: relative;
 
   &__wrap {
+    position: relative;
+    z-index: 2;
+
     @media screen and (min-width: 742px) {
       max-width: 80%;
     }
-  }
-
-  &__heading {
-    margin-bottom: 20px !important;
   }
 }
