@@ -167,6 +167,29 @@ const items = [
       </>
     ),
   },
+  {
+    id: 9,
+    title: 'Ostatní informace',
+    content: (
+      <>
+        <h4>Mazlíčci</h4>
+        <p>
+          Mazlíčci nejsou v areálu pivovaru povoleni. Vaše čtyřnohé kamarády tedy prosím nechte
+          doma.
+        </p>
+        <h4>Zásah do programu</h4>
+        <p>
+          Moc si vážíme vaší iniciativy, nápadů a chuti nás překvapit. Aby ale všechno krásně
+          zapadlo do programu a nic důležitého se nepřekrývalo, prosíme vás, abyste jakékoli
+          překvapení, hry nebo jiné zásahy do programu předem konzultovali se svědkyní nevěsty nebo
+          přímo s námi – snoubenci. Pomůžete nám tím udržet pohodovou atmosféru a zajistit, že si
+          svatební den společně užijeme naplno.
+        </p>
+        <h4>Únos nevěsty</h4>
+        <p>Nevěsta a ženich si nepřejí v programu únos nevěsty. Děkujeme za pochopení.</p>
+      </>
+    ),
+  },
 ];
 
 export const MoreInfo = () => {

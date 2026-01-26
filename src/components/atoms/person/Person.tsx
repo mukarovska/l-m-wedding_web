@@ -4,7 +4,7 @@ interface PersonProps {
   foto: string;
   name: string;
   name2?: string;
-  role: string;
+  role?: string;
 }
 
 export const Person = ({ foto, name, name2, role }: PersonProps) => {

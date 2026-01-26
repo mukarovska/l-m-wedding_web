@@ -12,6 +12,11 @@ export const Footer = () => {
           <p className="footer__content--title">Ulož si datum a přijď si s námi tento den užít!</p>
           <p className="footer__content--text">Těšíme se na tebe!</p>
           <p className="footer__content--small">Pokud máš dotazy k svatbě, napiš nám.</p>
+          <div className="footer__content--email">
+            <p>nevěsta: luci.mukarovska@gmail.com</p>
+            <p>ženich: zbuzek.martin@gmail.com</p>
+            <p>svědkyně: k.mukarovska01@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
