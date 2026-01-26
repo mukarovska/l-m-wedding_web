@@ -1,4 +1,4 @@
-import './invitation.scss';
+import './Invitation.scss';
 
 export const Invitation = () => {
   return (
