@@ -1,7 +1,7 @@
 import { ClothesSection } from './components/clothesSection/ClothesSection';
 import { Countdown } from './components/countdown/Countdown';
 import { Footer } from './components/footer/Footer';
-import { Fotos } from './components/fotos/Fotos';
+// import { Fotos } from './components/fotos/Fotos';
 import { HeroSection } from './components/heroSection/HeroSection';
 import { Invitation } from './components/invitation/Invitation';
 import { MoreInfo } from './components/moreInfo/MoreInfo';
@@ -22,7 +22,7 @@ function App() {
         <ClothesSection />
         <People />
         <MoreInfo />
-        <Fotos />
+        {/* <Fotos /> */}
         <Footer />
       </div>
     </>
