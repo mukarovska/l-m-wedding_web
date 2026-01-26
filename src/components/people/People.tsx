@@ -2,7 +2,7 @@ import { Person } from '../atoms/person/Person';
 import './People.scss';
 import fotoOndra from './images/ondra.jpeg';
 import fotoKaja from './images/kaja.jpg';
-import fotoDrak from './images/drak.jpg';
+import fotoDrak from './images/drak-foto.jpg';
 import fotoRodice from './images/rodice-foto.jpg';
 
 export const People = () => {
