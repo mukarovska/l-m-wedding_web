@@ -3,7 +3,7 @@ import './People.scss';
 import fotoOndra from './images/ondra.jpeg';
 import fotoKaja from './images/kaja.jpg';
 import fotoDrak from './images/drak.jpg';
-import fotoRodice from './images/rodice.jpg';
+import fotoRodice from './images/rodice-foto.jpg';
 
 export const People = () => {
   return (
