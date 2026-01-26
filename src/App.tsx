@@ -6,7 +6,7 @@ import { HeroSection } from './components/heroSection/HeroSection';
 import { Invitation } from './components/invitation/Invitation';
 import { MoreInfo } from './components/moreInfo/MoreInfo';
 import { People } from './components/people/People';
-import { Program } from './components/program/Program';
+// import { Program } from './components/program/Program';
 import { WhereSection } from './components/whereSection/WhereSection';
 
 function App() {
