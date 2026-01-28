@@ -96,7 +96,7 @@ const items = [
   },
   {
     id: 6,
-    title: 'Hostina pro rodinnu a párty pro všechny',
+    title: 'Hostina pro rodinu a párty pro všechny',
     content: (
       <>
         <p>
