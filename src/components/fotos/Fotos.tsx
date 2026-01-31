@@ -16,7 +16,6 @@ import photo14 from './images/14.jpeg';
 import photo15 from './images/15.jpeg';
 import photo16 from './images/16.jpeg';
 import photo17 from './images/17.jpeg';
-import photo18 from './images/18.jpeg';
 import photo19 from './images/19.jpeg';
 import photo20 from './images/20.jpeg';
 import photo21 from './images/21.jpeg';
@@ -36,6 +35,7 @@ import photo34 from './images/34.jpeg';
 const images = [
   photo1,
   photo2,
+  photo27,
   photo3,
   photo4,
   photo5,
@@ -50,7 +50,6 @@ const images = [
   photo15,
   photo16,
   photo17,
-  photo18,
   photo19,
   photo20,
   photo21,
@@ -59,7 +58,6 @@ const images = [
   photo24,
   photo25,
   photo26,
-  photo27,
   photo28,
   photo30,
   photo31,
