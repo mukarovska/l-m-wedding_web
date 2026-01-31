@@ -1,4 +1,6 @@
 import { Carousel } from '../atoms/carousel/Carousel';
+import { Timeline } from '../atoms/Timeline/Timeline';
+import type { Event } from '../program/Program';
 import './Fotos.scss';
 import photo1 from './images/1.jpg';
 import photo2 from './images/2.jpg';
@@ -66,12 +68,23 @@ const images = [
   photo34,
 ];
 
+const events: Event[] = [
+  { title: 'Poznali jsme se', description: 'Popis 1', time: 'Srpen 2020' },
+  { title: 'Začali jsme spolu chodit', description: 'Popis 2', time: 'Prosinec 2020' },
+  { title: 'Zasnoubili jsme se', description: 'Popis 3', time: 'Květen 2025' },
+  { title: 'Narodil se nám syn Ondrášek', description: 'Popis 3', time: 'Červenec 2025' },
+  { title: 'Bereme se!!!', description: 'Popis 3', time: 'Srpen 2026' },
+];
+
 export const Fotos = () => {
   return (
     <div className="fotos section">
       <div className="fotos__wrap">
         <h2 className="fotos__heading h2">O nás</h2>
-        <Carousel images={images} />
+        <div className="fotos__content">
+          <Timeline events={events} />
+          <Carousel images={images} />
+        </div>
       </div>
     </div>
   );

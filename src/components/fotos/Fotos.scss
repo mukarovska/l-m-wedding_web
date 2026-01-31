@@ -5,6 +5,15 @@
   @include m.section(0 30px);
   position: relative;
 
+  &__content {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+
+  .timeline {
+    margin-bottom: 50px;
+  }
+
   &__wrap {
     position: relative;
     z-index: 2;
