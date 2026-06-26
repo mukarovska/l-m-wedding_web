@@ -15,7 +15,7 @@ export const WhereSection = () => {
         <div className="whereSection__cards">
           <Card
             title="Příjezd hostů"
-            time="11:30"
+            time="11:40"
             place="Kaple sv. Vojtěcha"
             city="Kostelec nad Černými lesy"
             map="https://mapy.com/en/turisticka?source=base&id=1835674&ds=2&x=14.8623543&y=49.9956701&z=18"
