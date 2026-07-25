@@ -40,6 +40,11 @@
     }
   }
 
+  &__listItem {
+    display: flex;
+    gap: 5px;
+  }
+
   &__smallInfo {
     @include m.text;
     padding-bottom: 5px;

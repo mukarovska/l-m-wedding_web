@@ -27,15 +27,26 @@ export const Accomodation = () => {
               <p>
                 <b>Ubytování v pivovaru</b>
               </p>
-              <p>
-                <b>-</b> Ubytovat se můžete od <b>14:00</b>.
-              </p>
-              <p>
-                <b>-</b> Klíče od pokojů si vyzvednete na baru v hlavní veřejné hospodě Pivovaru.
-              </p>
-              <p>
-                <b>-</b> Při odjezdu prosím klíče vraťte opět na bar.
-              </p>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>
+                  Ubytovat se můžete od <b>14:00</b>.
+                </p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>Klíče od pokojů si vyzvednete na baru v hlavní veřejné hospodě Pivovaru.</p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>Při odjezdu prosím klíče vraťte opět na bar.</p>
+              </div>
             </div>
           </div>
           <div className="accomodation__content accomodation__content--bottom">
@@ -46,15 +57,26 @@ export const Accomodation = () => {
               <p className="accomodation__smallInfo">
                 (Penzion Formanka a Penzion Marie Terezie kněžny Savojské)
               </p>
-              <p>
-                <b>-</b> Ubytování bude možné po obřadu a společném focení.
-              </p>
-              <p>
-                <b>-</b> Klíče od pokojů vám po focení předají <b>Kačka a Vláďa Markovi</b>.
-              </p>
-              <p>
-                <b>-</b> Po skončení pobytu jim prosím klíče vraťte.
-              </p>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>Ubytování bude možné po obřadu a společném focení.</p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>
+                  Klíče od pokojů vám po focení předají <b>Kačka a Vláďa Markovi</b>.
+                </p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>Po skončení pobytu jim prosím klíče vraťte.</p>
+              </div>
             </div>
           </div>
         </div>
