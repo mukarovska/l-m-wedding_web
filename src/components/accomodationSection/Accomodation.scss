@@ -1,0 +1,129 @@
+@use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
+
+.accomodation {
+  @include m.section(0 30px 50px);
+  position: relative;
+
+  &__wrap {
+    z-index: 2;
+  }
+
+  &__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    &--bottom {
+      align-items: flex-end;
+    }
+  }
+
+  &__buttonHolder {
+    max-width: fit-content;
+    text-align: center;
+  }
+
+  &__text {
+    @include m.text-big;
+    max-width: 70%;
+    &--center {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__smallInfo {
+    @include m.text;
+    padding-bottom: 5px;
+  }
+}
+
+.button {
+  background-color: v.$primary-color;
+  padding: 5px 25px 7px;
+  border-radius: 100px;
+  margin-top: 10px;
+
+  a {
+    @include m.text(200, #fff);
+    text-decoration: none;
+  }
+}
+
+/*.flowers--clothesSection {
+  &--top {
+    width: 180px;
+    height: 657px;
+    transform: rotate(-40deg);
+    background-image: url('/flowers/6.png');
+    top: 80px;
+    left: 115%;
+
+    @media screen and (min-width: 490px) {
+      left: 105%;
+      top: 60px;
+    }
+
+    @media screen and (min-width: 742px) {
+      display: none;
+    }
+  }
+
+  &--bottom {
+    width: 150px;
+    height: 973px;
+    background-image: url('/flowers/7.png');
+    bottom: -330px;
+    right: 130%;
+    transform: rotate(37deg);
+
+    @media screen and (min-width: 370px) {
+      bottom: -310px;
+      right: 126%;
+    }
+
+    @media screen and (min-width: 400px) {
+      bottom: -280px;
+      right: 125%;
+    }
+
+    @media screen and (min-width: 440px) {
+      transform: rotate(45deg);
+      bottom: -202px;
+      right: 130%;
+    }
+
+    @media screen and (min-width: 500px) {
+      transform: rotate(45deg);
+      bottom: -530px;
+      right: 130%;
+    }
+
+    @media screen and (min-width: 580px) {
+      right: 120%;
+    }
+
+    @media screen and (min-width: 700px) {
+      transform: rotate(50deg);
+      bottom: -500px;
+      right: 110%;
+    }
+
+    @media screen and (min-width: 1406px) {
+      background-image: url('/flowers/8.png');
+      transform: rotate(35deg);
+      width: 872px;
+      height: 1351px;
+      top: 0;
+      right: 75%;
+    }
+  }
+}*/

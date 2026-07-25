@@ -6,6 +6,7 @@ import { HeroSection } from './components/heroSection/HeroSection';
 import { Invitation } from './components/invitation/Invitation';
 import { MoreInfo } from './components/moreInfo/MoreInfo';
 import { People } from './components/people/People';
+import { Accomodation } from './components/accomodationSection/Accomodation';
 // import { Program } from './components/program/Program';
 import { WhereSection } from './components/whereSection/WhereSection';
 
@@ -18,6 +19,7 @@ function App() {
         <Countdown />
         <Invitation />
         <WhereSection />
+        <Accomodation />
         {/* <Program /> */}
         <ClothesSection />
         <People />
