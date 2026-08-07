@@ -31,7 +31,7 @@ export const WhereSection = () => {
           />
           <Card
             title="Hostina s rodinou"
-            time="14:00"
+            time="13:30"
             place="Černokostelecký pivovar"
             city="Kostelec nad Černými lesy"
             map="https://mapy.com/en/zakladni?source=firm&id=1983521&ds=1&x=14.8649558&y=49.9979397&z=17"
@@ -39,7 +39,7 @@ export const WhereSection = () => {
           />
           <Card
             title="Párty pro všechny"
-            time="16:00"
+            time="15:30"
             place="Černokostelecký pivovar"
             city="Kostelec nad Černými lesy"
             map="https://mapy.com/en/zakladni?source=firm&id=1983521&ds=1&x=14.8649558&y=49.9979397&z=17"
