@@ -46,6 +46,16 @@ export const WhereSection = () => {
             icone={<PartyIcon />}
           />
         </div>
+        <div className="whereSection__textWrapp">
+          <p className="whereSection__text">
+            Prosíme hosty, aby v prostorách pivovaru ani na zahradě nepoužívali ohňostroje,
+            vystřelovací konfety ani jiné předměty, které mohou představovat nebezpečí požáru nebo
+            výrazně ztížit následný úklid.
+          </p>
+          <p className="whereSection__text">
+            Děkujeme za ohleduplnost a respektování tohoto pravidla.
+          </p>
+        </div>
       </div>
     </div>
   );

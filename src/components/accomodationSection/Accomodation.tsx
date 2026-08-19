@@ -45,7 +45,13 @@ export const Accomodation = () => {
                 <p>
                   <b>-</b>
                 </p>
-                <p>Při odjezdu prosím klíče vraťte opět na bar.</p>
+                <p>Checkout v neděli do 11:00. Při odjezdu prosím klíče vraťte opět na bar.</p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>Snídaně se podává v restauraci pivovaru od 9:00 do 11:30.</p>
               </div>
             </div>
           </div>
@@ -75,7 +81,15 @@ export const Accomodation = () => {
                 <p>
                   <b>-</b>
                 </p>
-                <p>Po skončení pobytu jim prosím klíče vraťte.</p>
+                <p>Po skončení pobytu jim prosím klíče vraťte do 11:30.</p>
+              </div>
+              <div className="accomodation__listItem">
+                <p>
+                  <b>-</b>
+                </p>
+                <p>
+                  Snídaně se podává <b>v restauraci pivovaru</b> od 9:00 do 11:30.
+                </p>
               </div>
             </div>
           </div>

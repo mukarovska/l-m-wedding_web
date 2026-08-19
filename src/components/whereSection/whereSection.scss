@@ -23,6 +23,13 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  &__text {
+    @include m.text-big;
+    max-width: 70%;
+    text-align: center;
+    margin: 30px auto 0 auto;
+  }
 }
 
 .flowers--whereSection {
@@ -52,13 +59,7 @@
     height: 687px;
     background-image: url('/flowers/4.png');
     bottom: -400px;
-    right: 70%;
-
-    @media screen and (min-width: 548px) {
-      width: 500px;
-      height: 887px;
-      right: 70%;
-    }
+    right: 80%;
 
     @media screen and (min-width: 548px) {
       width: 300px;
