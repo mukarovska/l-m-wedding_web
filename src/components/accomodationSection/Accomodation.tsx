@@ -51,7 +51,7 @@ export const Accomodation = () => {
                 <p>
                   <b>-</b>
                 </p>
-                <p>Snídaně se podává v restauraci pivovaru od 9:00 do 11:30.</p>
+                <p>Snídaně se podává v restauraci pivovaru od 9:00 do 10:30</p>
               </div>
             </div>
           </div>
@@ -81,14 +81,14 @@ export const Accomodation = () => {
                 <p>
                   <b>-</b>
                 </p>
-                <p>Po skončení pobytu jim prosím klíče vraťte do 11:30.</p>
+                <p>Po skončení pobytu jim prosím klíče vraťte do 10:30.</p>
               </div>
               <div className="accomodation__listItem">
                 <p>
                   <b>-</b>
                 </p>
                 <p>
-                  Snídaně se podává <b>v restauraci pivovaru</b> od 9:00 do 11:30.
+                  Snídaně se podává <b>v restauraci pivovaru</b> od 9:00 do 10:30.
                 </p>
               </div>
             </div>
